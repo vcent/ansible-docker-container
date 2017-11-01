@@ -1,0 +1,12 @@
+---
+# tasks file for docker
+
+- include: pull.yml
+
+- include: stop.yml
+
+- include: rm.yml
+
+- include: run.yml
+
+

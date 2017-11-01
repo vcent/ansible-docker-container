@@ -1,0 +1,6 @@
+---
+  - name: stop  container
+    shell: docker stop  {{ container_name }}
+    ignore_errors: True
+    tags: stop
+

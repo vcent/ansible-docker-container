@@ -1,0 +1,7 @@
+---
+  - name: pull docker image
+    command: docker pull {{ image_name }}:{{ image_tag }}
+#    ignore_errors: yes
+    tags: pull
+
+

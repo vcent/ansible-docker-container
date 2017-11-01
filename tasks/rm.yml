@@ -1,0 +1,7 @@
+---
+  - name: remove old container
+    shell: docker rm -f -v  {{ container_name }}
+    ignore_errors: True
+    tags: rm
+
+

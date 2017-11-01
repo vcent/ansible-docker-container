@@ -1,0 +1,8 @@
+---
+  - name: run  container
+    shell: docker run -d --name {{ container_name }}  --net host --restart=always {{ image_name }}:{{ image_tag }} 
+    #shell: docker run -d --name {{ container_name }}  --net host --restart=always {{ image_name }}:{{ image_tag }} 30 
+    ignore_errors: True
+    tags: run
+
+
